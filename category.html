@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Category Tasks</title>
+
+<link rel="stylesheet"
+href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+
+<div class="greeting">
+
+<a href="index.html"
+class="backBtn">
+
+<i class="fa-solid fa-arrow-left"></i>
+
+Back
+
+</a>
+
+<h1 id="categoryTitle">
+
+Category Tasks
+
+</h1>
+
+<p id="categoryCount">
+
+0 Tasks
+
+</p>
+
+</div>
+
+<button id="openModalBtn">
+
+<i class="fa-solid fa-plus"></i>
+
+Add Task
+
+</button>
+
+</header>
+
+<section>
+
+<h2 class="sectionTitle">
+
+Assignments
+
+</h2>
+
+<div id="taskContainer">
+
+</div>
+
+</section>
+
+</div>
+
+<!-- MODAL -->
+
+<div class="modal"
+id="taskModal">
+
+<div class="modal-content">
+
+<h2>
+
+Create New Task
+
+</h2>
+
+<input
+type="text"
+id="taskInput"
+placeholder="Enter assignment">
+
+<input
+type="date"
+id="taskDate">
+
+<input
+type="time"
+id="taskTime">
+
+<select id="taskCategory">
+
+<option>Personal</option>
+<option>Work</option>
+<option>Health</option>
+<option>Coding</option>
+<option>Fitness</option>
+<option>Shopping</option>
+<option>Education</option>
+
+</select>
+
+<button id="saveTask">
+
+<i class="fa-solid fa-floppy-disk"></i>
+
+Save Task
+
+</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
